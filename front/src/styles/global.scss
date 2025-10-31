@@ -1,8 +1,7 @@
 @use "variables" as *;
 @use "mixins" as *;
+@use "reset" as *;
 
 body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    background-color: #f8f9fa;
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
 }
