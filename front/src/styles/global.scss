@@ -1,0 +1,8 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #f8f9fa;
+}
