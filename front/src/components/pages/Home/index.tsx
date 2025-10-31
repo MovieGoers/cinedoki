@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 const Home = () => {
     return (
         <div className={cx("home-container")}>
-            <h1>Welcome to Vite + React + TS + SCSS</h1>
+            <h1>Deploy test</h1>
         </div>
     );
 }
