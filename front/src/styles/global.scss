@@ -1,8 +1,15 @@
-@use "variables" as *;
-@use "mixins" as *;
+@use "./utils/variables" as *;
+@use "./utils/mixins" as *;
+@use "reset" as *;
 
 body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    background-color: #f8f9fa;
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
