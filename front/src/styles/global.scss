@@ -1,7 +1,15 @@
-@use "variables" as *;
-@use "mixins" as *;
+@use "./utils/variables" as *;
+@use "./utils/mixins" as *;
 @use "reset" as *;
 
 body {
     font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

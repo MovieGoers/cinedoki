@@ -4,14 +4,6 @@
     align-items: center;
 }
 
-@mixin blind {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 @mixin text-ellipsis($line: 1) {
     @if ($line ==1) {
         overflow: hidden;
@@ -26,5 +18,23 @@
         word-wrap: break-word;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: $line;
+    }
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content
+    }
+
+    :-moz-placeholder {
+        @content
+    }
+
+    ::-moz-placeholder {
+        @content
+    }
+
+    :-ms-input-placeholder {
+        @content
     }
 }
